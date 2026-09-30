@@ -87,6 +87,6 @@ Cisco Packet Tracer · Cisco IOS CLI · VLSM · RIPv2 · Static/Floating Static 
 | Ameet Faisal | 22201869 | DHCP, static and dynamic routing, IP assignment, subnetting, documentation |
 
 ## Repository Contents
-- `421_Project/`: Packet Tracer project files
+- `421 Lab Project.pkt`: Packet Tracer project file
 - `Topology.png`: network topology
 - `207.pdf`: full report (VLSM tree, IP table, configs)
