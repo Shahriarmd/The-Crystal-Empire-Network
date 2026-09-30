@@ -1,0 +1,11 @@
+Titan Valley Router
+Titan_Valley>en
+Titan_Valley#config t
+Titan_Valley(config)#ip route 18.69.22.0 255.255.255.0 18.69.24.73 150
+Titan_Valley(config)#ip route 18.69.22.0 255.255.255.0 18.69.24.69 200
+
+Aurora Ridge Router
+Aurora_Ridge>en
+Aurora_Ridge#config t
+Aurora_Ridge(config)#ip route 18.69.0.0 255.255.240.0 18.69.24.74 150
+Aurora_Ridge(config)#ip route 18.69.0.0 255.255.240.0 18.69.29.1 200

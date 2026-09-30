@@ -1,0 +1,77 @@
+Titan_Valley>en
+Titan_Valley#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Titan_Valley(config)#router rip
+Titan_Valley(config-router)#version 2
+Titan_Valley(config-router)#no auto-summary
+Titan_Valley(config-router)#network 18.69.0.0
+Titan_Valley(config-router)#network 18.69.20.0
+Titan_Valley(config-router)#network 18.69.22.0
+Titan_Valley(config-router)#exit
+Titan_Valley(config)#exit
+
+
+Aurora_Ridge#en
+Aurora_Ridge#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Aurora_Ridge(config)#interface serial 0/0/0
+Aurora_Ridge(config-if)#ip address 18.69.30.1 255.255.255.252
+Aurora_Ridge(config-if)#no shutdown
+
+%LINK-5-CHANGED: Interface Serial0/0/0, changed state to down
+Aurora_Ridge(config-if)#exit
+Aurora_Ridge(config)#exit
+Aurora_Ridge#
+%SYS-5-CONFIG_I: Configured from console by console
+
+Aurora_Ridge#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Aurora_Ridge(config)#router rip
+Aurora_Ridge(config-router)#version 2
+Aurora_Ridge(config-router)#no auto-summary
+Aurora_Ridge(config-router)#network 18.69.22.0
+Aurora_Ridge(config-router)#network 18.69.0.0
+Aurora_Ridge(config-router)#exit
+Aurora_Ridge(config)#exit
+
+
+
+Glacier_Fields> enable
+Glacier_Fields# conf t
+interface serial 0/0/1
+ip address 18.69.30.2 255.255.255.252
+no shutdown
+exit
+
+
+Glacier_Fields>en
+Glacier_Fields#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Glacier_Fields(config)#router rip
+Glacier_Fields(config-router)#version 2
+Glacier_Fields(config-router)#no auto-summary
+Glacier_Fields(config-router)#network 18.69.20.0
+Glacier_Fields(config-router)#network 18.69.0.0
+Glacier_Fields(config-router)#exit
+Glacier_Fields(config)#exit
+Glacier_Fields#
+
+
+Neon_Hills#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Neon_Hills(config)#interface serial 0/1/0
+Neon_Hills(config-if)#ip address 18.69.30.5 255.255.255.252
+Neon_Hills(config-if)#clock rate 64000  
+Neon_Hills(config-if)#no shut
+
+
+Glacier_Fields#
+Glacier_Fields#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Glacier_Fields(config)#interface serial 0/0/0
+Glacier_Fields(config-if)#ip address 18.69.30.6 255.255.255.252
+Glacier_Fields(config-if)#no shut
+Glacier_Fields(config-if)#exit
+Glacier_Fields(config)#exit
+
+

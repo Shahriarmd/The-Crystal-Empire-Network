@@ -1,0 +1,67 @@
+Communication between Solar & Neon
+On Solar Palace
+Solar_Palace#conf t
+Solar_Palace(config)#interface serial 0/0/0
+Solar_Palace(config-if)#ip address 18.69.24.65 255.255.255.252
+Solar_Palace(config-if)#clock rate 64000
+Solar_Palace(config-if)#no shutdown
+Solar_Palace(config-if)#exit
+Solar_Palace(config)#exit
+
+On Neon Hills
+Neon_Hills#conf t
+Neon_Hills(config)#interface serial 0/0/0
+Neon_Hills(config-if)#ip address 18.69.24.66 255.255.255.252
+Neon_Hills(config-if)#no shutdown
+Neon_Hills(config-if)#exit
+Neon_Hills(config)#exit
+
+Solar palace Ip route static
+ip route 18.69.23.0 255.255.255.0 18.69.24.66
+Neon Hills Ip route static
+ip route 18.69.24.0 255.255.255.192 18.69.24.65
+
+
+Communication between Neon and Titan
+On Neon Hills
+Neon_Hills#conf t
+Neon_Hills(config)#interface serial 0/0/1
+Neon_Hills(config-if)#ip address 18.69.24.69 255.255.255.252
+Neon_Hills(config-if)#clock rate 64000
+Neon_Hills(config-if)#no shutdown
+Neon_Hills(config-if)#exit
+Neon_Hills(config)#exit
+
+Titan Valley
+Titan_Valley#conf t
+Titan_Valley(config)#interface serial 0/0/1
+Titan_Valley(config-if)#ip address 18.69.24.70 255.255.255.252
+Titan_Valley(config-if)#no shutdown
+Titan_Valley(config-if)#exit
+Titan_Valley(config)#exit
+
+Neon Hills ip route static
+ip route 18.69.0.0 255.255.240.0 serial 0/0/1
+Titan Valey ip route static
+ip route 18.69.23.0 255.255.255.0 serial 0/0/0
+
+
+Solar_Palace> enable
+Solar_Palace# conf t
+ip route 18.69.23.0 255.255.255.0 18.69.24.66
+ip route 18.69.0.0 255.255.240.0 18.69.24.66
+exit
+
+Neon_Hills> enable
+Neon_Hills# conf t
+ip route 18.69.24.0 255.255.255.192 18.69.24.65
+ip route 18.69.0.0 255.255.240.0 18.69.24.70
+exit
+
+
+Titan_Valley> enable
+Titan_Valley# conf t
+ip route 18.69.23.0 255.255.255.0 18.69.24.69
+ip route 18.69.24.0 255.255.255.192 18.69.24.69
+exit
+

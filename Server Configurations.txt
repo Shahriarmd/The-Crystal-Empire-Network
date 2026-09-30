@@ -1,0 +1,13 @@
+DHCP Server Configuration:
+Neon_Hills>en
+Neon_Hills#config t
+Neon_Hills(config)#ip dhcp pool GLACIER_FIELDS
+Neon_Hills(dhcp-config)#network 18.69.20.0 255.255.254.0
+Neon_Hills(dhcp-config)#default-router  18.69.20.1
+Neon_Hills(dhcp-config)#dns-server 18.69.23.2
+
+Neon_Hills(config)# ip dhcp pool AURORA_RIDGE
+Neon_Hills(config-dhcp)# network 18.69.22.0 255.255.255.0
+Neon_Hills(config-dhcp)# default-router 18.69.22.1
+Neon_Hills(config-dhcp)# dns-server 18.69.23.2
+Neon_Hills(config-dhcp)# exit

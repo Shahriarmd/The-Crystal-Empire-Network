@@ -1,0 +1,228 @@
+Solar Palace pc 3
+18.69.24.10
+255.255.255.192
+18.69.24.1
+0.0.0.0
+
+Solar Palace pc 4
+18.69.24.11
+255.255.255.192
+18.69.24.1
+0.0.0.0
+
+Solar Palace Pc 5
+18.69.24.12
+255.255.255.192
+18.69.24.1
+0.0.0.0
+
+
+Neon Hills Pc 3(2)
+18.69.23.20
+255.255.255.0
+18.69.23.1
+0.0.0.0
+
+Neon Hills Pc 4(2)
+18.69.23.21
+255.255.255.0
+18.69.23.1
+0.0.0.0
+
+Neon Hills Pc 5(2)
+18.69.23.22
+255.255.255.0
+18.69.23.1
+0.0.0.0
+
+
+Titan Valley Pc3 (1)(1)
+18.69.0.10
+255.255.240.0
+18.69.0.1
+0.0.0.0
+
+Titan Valley Pc4 (1)(1)
+18.69.0.11
+255.255.240.0
+18.69.0.1
+0.0.0.0
+
+Titan Valley Pc4 (1)(1)
+18.69.0.12
+255.255.240.0
+18.69.0.1
+0.0.0.0
+
+Titan Valley ping to solar Palace and Neon Hills pcs -
+Cisco Packet Tracer PC Command Line 1.0
+C:\>ping 18.69.24.12
+
+Pinging 18.69.24.12 with 32 bytes of data:
+
+Request timed out.
+Reply from 18.69.24.12: bytes=32 time=7ms TTL=125
+Reply from 18.69.24.12: bytes=32 time=6ms TTL=125
+Reply from 18.69.24.12: bytes=32 time=6ms TTL=125
+
+Ping statistics for 18.69.24.12:
+    Packets: Sent = 4, Received = 3, Lost = 1 (25% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 6ms, Maximum = 7ms, Average = 6ms
+
+C:\>ping 18.69.24.11
+
+Pinging 18.69.24.11 with 32 bytes of data:
+
+Request timed out.
+Reply from 18.69.24.11: bytes=32 time=9ms TTL=125
+Reply from 18.69.24.11: bytes=32 time=11ms TTL=125
+Reply from 18.69.24.11: bytes=32 time=7ms TTL=125
+
+Ping statistics for 18.69.24.11:
+    Packets: Sent = 4, Received = 3, Lost = 1 (25% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 7ms, Maximum = 11ms, Average = 9ms
+
+C:\>ping 18.69.24.10
+
+Pinging 18.69.24.10 with 32 bytes of data:
+
+Reply from 18.69.24.10: bytes=32 time=8ms TTL=125
+Reply from 18.69.24.10: bytes=32 time=6ms TTL=125
+Reply from 18.69.24.10: bytes=32 time=10ms TTL=125
+Reply from 18.69.24.10: bytes=32 time=10ms TTL=125
+
+Ping statistics for 18.69.24.10:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 6ms, Maximum = 10ms, Average = 8ms
+
+C:\>ping 18.69.23.20
+
+Pinging 18.69.23.20 with 32 bytes of data:
+
+Reply from 18.69.23.20: bytes=32 time=9ms TTL=126
+Reply from 18.69.23.20: bytes=32 time=7ms TTL=126
+Reply from 18.69.23.20: bytes=32 time=8ms TTL=126
+Reply from 18.69.23.20: bytes=32 time=6ms TTL=126
+
+Ping statistics for 18.69.23.20:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 6ms, Maximum = 9ms, Average = 7ms
+
+C:\>ping 18.69.23.21
+
+Pinging 18.69.23.21 with 32 bytes of data:
+
+Request timed out.
+Reply from 18.69.23.21: bytes=32 time=6ms TTL=126
+Reply from 18.69.23.21: bytes=32 time=9ms TTL=126
+Reply from 18.69.23.21: bytes=32 time=7ms TTL=126
+
+Ping statistics for 18.69.23.21:
+    Packets: Sent = 4, Received = 3, Lost = 1 (25% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 6ms, Maximum = 9ms, Average = 7ms
+
+C:\>ping 18.69.23.22
+
+Pinging 18.69.23.22 with 32 bytes of data:
+
+Request timed out.
+Reply from 18.69.23.22: bytes=32 time=6ms TTL=126
+Reply from 18.69.23.22: bytes=32 time=7ms TTL=126
+Reply from 18.69.23.22: bytes=32 time=7ms TTL=126
+
+Ping statistics for 18.69.23.22:
+    Packets: Sent = 4, Received = 3, Lost = 1 (25% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 6ms, Maximum = 7ms, Average = 6ms
+
+
+Solar Palace to Other pcs-
+Cisco Packet Tracer PC Command Line 1.0
+C:\>ping 18.69.23.20
+
+Pinging 18.69.23.20 with 32 bytes of data:
+
+Reply from 18.69.23.20: bytes=32 time=8ms TTL=126
+Reply from 18.69.23.20: bytes=32 time=7ms TTL=126
+Reply from 18.69.23.20: bytes=32 time=9ms TTL=126
+Reply from 18.69.23.20: bytes=32 time=7ms TTL=126
+
+Ping statistics for 18.69.23.20:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 7ms, Maximum = 9ms, Average = 7ms
+
+C:\>ping 18.69.23.21
+
+Pinging 18.69.23.21 with 32 bytes of data:
+
+Reply from 18.69.23.21: bytes=32 time=8ms TTL=126
+Reply from 18.69.23.21: bytes=32 time=11ms TTL=126
+Reply from 18.69.23.21: bytes=32 time=7ms TTL=126
+Reply from 18.69.23.21: bytes=32 time=7ms TTL=126
+
+Ping statistics for 18.69.23.21:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 7ms, Maximum = 11ms, Average = 8ms
+
+C:\>ping 18.69.23.22
+
+Pinging 18.69.23.22 with 32 bytes of data:
+
+Reply from 18.69.23.22: bytes=32 time=8ms TTL=126
+Reply from 18.69.23.22: bytes=32 time=7ms TTL=126
+Reply from 18.69.23.22: bytes=32 time=9ms TTL=126
+Reply from 18.69.23.22: bytes=32 time=7ms TTL=126
+
+Ping statistics for 18.69.23.22:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 7ms, Maximum = 9ms, Average = 7ms
+
+C:\>ping 18.69.0.10
+
+Pinging 18.69.0.10 with 32 bytes of data:
+
+Reply from 18.69.0.10: bytes=32 time=10ms TTL=125
+Reply from 18.69.0.10: bytes=32 time=7ms TTL=125
+Reply from 18.69.0.10: bytes=32 time=10ms TTL=125
+Reply from 18.69.0.10: bytes=32 time=11ms TTL=125
+
+Ping statistics for 18.69.0.10:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 7ms, Maximum = 11ms, Average = 9ms
+
+C:\>ping 18.69.0.11
+
+Pinging 18.69.0.11 with 32 bytes of data:
+
+Request timed out.
+Reply from 18.69.0.11: bytes=32 time=12ms TTL=125
+Reply from 18.69.0.11: bytes=32 time=10ms TTL=125
+Reply from 18.69.0.11: bytes=32 time=8ms TTL=125
+
+Ping statistics for 18.69.0.11:
+    Packets: Sent = 4, Received = 3, Lost = 1 (25% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 8ms, Maximum = 12ms, Average = 10ms
+
+C:\>ping 18.69.0.12
+
+Pinging 18.69.0.12 with 32 bytes of data:
+
+Reply from 18.69.0.12: bytes=32 time=12ms TTL=125
+Reply from 18.69.0.12: bytes=32 time=10ms TTL=125
+Reply from 18.69.0.12: bytes=32 time=14ms TTL=125
+Reply from 18.69.0.12: bytes=32 time=4ms TTL=125
+
+Ping statistics for 18.69.0.12:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 4ms, Maximum = 14ms, Average = 10ms
